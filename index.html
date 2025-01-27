@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title> Ejercicio 2 del Examen </title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <title>Formulario de Empleo </title>
 </head>
 
 <body>
     <form>
-        <h1> Oferta de Empleo </h1>
+        <h1> ¿Interesado en trabajar con nosotros? Rellena el siguiente formulario! </h1>
         <fieldset>
             <legend> Datos personales </legend>
             Nombre <input type="text">
@@ -83,7 +83,12 @@
                 <input type="radio"> Bachillerato
             <br>
             <br>
-                <input type="radio"> Titulo universitario
+                <input type="radio"> Ciclo formativo <br>
+                Indica el ciclo formativo <input type="text">
+            <br>
+            <br>
+                <input type="radio"> Titulo universitario <br>
+                Indica el titulo universitario <input type="text">
         </fieldset>
 
         <fieldset>
@@ -107,6 +112,11 @@
                     <option> Cádiz </option>
                     <option> León </option>
                 </select> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Envíanos tu CV</legend>
+            <input type="file" name="cv">
         </fieldset>
 
         <fieldset>
