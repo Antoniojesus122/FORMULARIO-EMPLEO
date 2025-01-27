@@ -1,0 +1,1 @@
+Ejemplo de un formulario para inscribirse a una oferta de empleado de cualquier empresa, donde tenemos distintos campos en los que podemos destacar el campo donde poner adjuntar nuestro CV o tambien otros cambios de checkbox para indicar que areas nos interesan.
