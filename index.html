@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Ejercicio 2 del Examen </title>
+</head>
+
+<body>
+    <form>
+        <h1> Oferta de Empleo </h1>
+        <fieldset>
+            <legend> Datos personales </legend>
+            Nombre <input type="text">
+        <br>
+        <br>
+            Apellido <input type="text">
+        <br>
+        <br>
+            Dirección <input type="text">
+        <br>
+        <br>
+            Código postal <input type="text">
+        <br>
+        <br>
+            Teléfono <input type="text">
+        <br>
+        <br>
+            Estado Civil
+                <select name="estado" id="e_c">
+                    <option> Soltero/a </option>
+                    <option> Casado/a </option>
+                    <option> Viudo/a </option>
+                </select>
+        </fieldset>
+    
+        <fieldset> 
+            <legend> Idiomas </legend>
+
+                <input type="text" value="Inglés">
+                <select>
+                    <option> Seleccionar </option>
+                    <option> Alto </option>
+                    <option> Medio </option>
+                    <option> Bajo </option>
+                </select>
+            <br>
+            <br>
+                <input type="text" value="Francés">
+                <select>
+                    <option> Seleccionar </option>
+                    <option> Alto </option>
+                    <option> Medio </option>
+                    <option> Bajo </option>
+                </select>
+            <br>
+            <br>
+                <input type="text" value="Alemán">
+                <select>
+                    <option> Seleccionar </option>
+                    <option> Alto </option>
+                    <option> Medio </option>
+                    <option> Bajo </option>
+                </select>
+            <br>
+            <br>
+                <input type="text" value="Portugués">
+                <select>
+                    <option> Seleccionar </option>
+                    <option> Alto </option>
+                    <option> Medio </option>
+                    <option> Bajo </option>
+                </select>
+        </fieldset>
+
+        <fieldset>
+            <legend> Formación académica </legend>
+                <input type="radio"> Graduado escolar
+            <br>
+            <br>
+                <input type="radio"> Bachillerato
+            <br>
+            <br>
+                <input type="radio"> Titulo universitario
+        </fieldset>
+
+        <fieldset>
+            <legend> Áreas de interés </legend>
+                <input type="checkbox"> Mantenimiento
+            <br>
+            <br>
+                <input type="checkbox"> Administración
+            <br>
+            <br>
+                <input type="checkbox"> Servicios
+        </fieldset>
+
+        <fieldset>
+            <legend> Sucursales de interés </legend>
+                <select name="Sucursales" id="suc">
+                    <option> Barcelona </option>
+                    <option> Madrid </option>
+                    <option> Zaragoza </option>
+                    <option> Tarragona </option>
+                    <option> Cádiz </option>
+                    <option> León </option>
+                </select> 
+        </fieldset>
+
+        <fieldset>
+            <legend> Comentarios </legend>
+                <textarea name="Comentarios" id="coment" cols="90" rows="5"></textarea>
+        </fieldset>
+            <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+</body>
+</html>
