@@ -9,24 +9,30 @@
 </head>
 
 <body>
-    <h1 class="titulo"> ¿Interesado en trabajar con nosotros? Rellena el siguiente formulario! </h1>
+    <h1 class="titulo"> ¿Interesado en trabajar con nosotros? <br>
+        Rellena el siguiente formulario! </h1>
     <form action="https://formspree.io/f/xvgzkkzj" method="POST">
         <fieldset>
             <br>
             <legend> Datos personales </legend>
-            Nombre <input type="text">
+            Nombre <br>
+            <input type="text">
         <br>
         <br>
-            Apellidos <input type="text">
+            Apellidos <br>
+            <input type="text">
         <br>
         <br>
-            Dirección <input type="text">
+            Dirección <br>
+            <input type="text">
         <br>
         <br>
-            Código postal <input type="text">
+            Código postal <br>
+            <input type="text">
         <br>
         <br>
-            Teléfono <input type="text">
+            Teléfono <br>
+            <input type="text">
         <br>
         <br>
             Estado Civil
@@ -37,7 +43,8 @@
                 </select>
         <br>
         <br>
-            Indica tú página web (si tienes) <input type="text">
+            Indica tú página web (si tienes) <br>
+            <input type="text">
             <br>
             <br>
         </fieldset>
@@ -84,7 +91,7 @@
                 <br><br>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="areas-interes">
             <br>
             <legend> Áreas de interés </legend>
                 <input type="checkbox"> Mantenimiento
@@ -111,7 +118,7 @@
                 <br><br>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="cv">
             <br>
             <legend>Envíanos tu CV</legend>
             <input type="file" name="cv">
@@ -125,8 +132,11 @@
                 <br><br>
         </fieldset>
             <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Restablecer">
+        <input type="submit" value="Enviar" class="enviar">
+        <input type="reset" value="Restablecer" class="restablecer">
+
+        <br>
+        <p class="aviso">Los datos introducidos serán tratados con la máxima confidencialidad, conforme a las normas de protección de datos en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos.</p>
     </form>
 </body>
 </html>

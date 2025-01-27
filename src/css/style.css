@@ -50,8 +50,8 @@ fieldset legend {
     border-radius: 5px;
 }
 
-input  {
-    width: 90%;
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 50%;
     padding: 0.3rem;
     margin-bottom: 1rem;
     border: 1px solid #6481808a;
@@ -70,6 +70,107 @@ select {
     margin-top: 1rem;
 }
 
-.formacion input[type="radio"] {
-    accent-color: #648180; 
+.formacion input[type="radio"] { 
+    margin-right: 0.5rem;
+    appearance: none;
+    border: #455d61 1px solid;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #6489915b;
+        color: #fff;
+    }
+    
+    &:checked {
+        background-color: #455d61;
+        color: #fff;
+    }
+}
+
+.formacion input[type="text"] {
+    margin-left: 0.5rem;
+    width: 42%;
+}
+
+.areas-interes input[type="checkbox"] {
+    margin-right: 0.5rem;
+    appearance: none;
+    border: #455d61 1px solid;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #6489915b;
+        color: #fff;
+    }
+    
+    &:checked {
+        background-color: #455d61;
+        color: #fff;
+    }
+}
+
+.enviar {
+    width: 40%;
+    padding: 0.5rem 1rem;
+    background-color: #455d61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 14rem;
+}
+
+.restablecer {
+    width: 40%;
+    padding: 0.5rem 1rem;
+    background-color: #455d61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 14rem;
+}
+
+.aviso {
+    font-size: 0.8rem;
+    color: #636363;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .titulo {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    form {
+        flex-direction: column;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    
+    input[type="text"], input[type="email"], input[type="tel"] {
+        width: 70%;
+    }
+
+    select {
+        width: 35%;
+    }
+
+    .enviar {
+        margin-left: 6.5rem;
+    }
+
+    .restablecer {
+        margin-left: 6.5rem;
+    }
 }
