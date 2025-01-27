@@ -9,14 +9,15 @@
 </head>
 
 <body>
-    <form>
-        <h1> ¿Interesado en trabajar con nosotros? Rellena el siguiente formulario! </h1>
+    <h1 class="titulo"> ¿Interesado en trabajar con nosotros? Rellena el siguiente formulario! </h1>
+    <form action="https://formspree.io/f/xvgzkkzj" method="POST">
         <fieldset>
+            <br>
             <legend> Datos personales </legend>
             Nombre <input type="text">
         <br>
         <br>
-            Apellido <input type="text">
+            Apellidos <input type="text">
         <br>
         <br>
             Dirección <input type="text">
@@ -34,12 +35,18 @@
                     <option> Casado/a </option>
                     <option> Viudo/a </option>
                 </select>
+        <br>
+        <br>
+            Indica tú página web (si tienes) <input type="text">
+            <br>
+            <br>
         </fieldset>
-    
-        <fieldset> 
+        
+        <fieldset class="idiomas">
+            <br>
             <legend> Idiomas </legend>
 
-                <input type="text" value="Inglés">
+                <input type="text" value="Español">
                 <select>
                     <option> Seleccionar </option>
                     <option> Alto </option>
@@ -48,7 +55,7 @@
                 </select>
             <br>
             <br>
-                <input type="text" value="Francés">
+                <input type="text" placeholder="Otro...">
                 <select>
                     <option> Seleccionar </option>
                     <option> Alto </option>
@@ -57,41 +64,28 @@
                 </select>
             <br>
             <br>
-                <input type="text" value="Alemán">
-                <select>
-                    <option> Seleccionar </option>
-                    <option> Alto </option>
-                    <option> Medio </option>
-                    <option> Bajo </option>
-                </select>
-            <br>
-            <br>
-                <input type="text" value="Portugués">
-                <select>
-                    <option> Seleccionar </option>
-                    <option> Alto </option>
-                    <option> Medio </option>
-                    <option> Bajo </option>
-                </select>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="formacion">
+            <br>
             <legend> Formación académica </legend>
-                <input type="radio"> Graduado escolar
+                <input type="radio" name="formacion" value="opcion"> Graduado escolar
             <br>
             <br>
-                <input type="radio"> Bachillerato
+                <input type="radio" name="formacion" value="opcion"> Bachillerato
             <br>
             <br>
-                <input type="radio"> Ciclo formativo <br>
+                <input type="radio" name="formacion" value="opcion"> Ciclo formativo <br>
                 Indica el ciclo formativo <input type="text">
             <br>
             <br>
-                <input type="radio"> Titulo universitario <br>
+                <input type="radio" name="formacion" value="opcion"> Titulo universitario <br>
                 Indica el titulo universitario <input type="text">
+                <br><br>
         </fieldset>
 
         <fieldset>
+            <br>
             <legend> Áreas de interés </legend>
                 <input type="checkbox"> Mantenimiento
             <br>
@@ -100,9 +94,11 @@
             <br>
             <br>
                 <input type="checkbox"> Servicios
+                <br><br>
         </fieldset>
 
         <fieldset>
+            <br>
             <legend> Sucursales de interés </legend>
                 <select name="Sucursales" id="suc">
                     <option> Barcelona </option>
@@ -112,16 +108,21 @@
                     <option> Cádiz </option>
                     <option> León </option>
                 </select> 
+                <br><br>
         </fieldset>
 
         <fieldset>
+            <br>
             <legend>Envíanos tu CV</legend>
             <input type="file" name="cv">
+            <br><br>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="coment">
+            <br>
             <legend> Comentarios </legend>
                 <textarea name="Comentarios" id="coment" cols="90" rows="5"></textarea>
+                <br><br>
         </fieldset>
             <br>
         <input type="submit" value="Enviar">

@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #afafaf79;
+}
+
+.titulo {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: #4e6568;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form {
+    width: 150%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #76999770;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+}
+
+fieldset {
+    border: 2px solid #6481808a;
+    margin-bottom: 20px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    font-size: 1.4rem;
+    color: #455d61;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.coment textarea {
+    width: 90%;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #6481808a;
+    border-radius: 5px;
+}
+
+input  {
+    width: 90%;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #6481808a;
+    border-radius: 5px;
+}
+
+select {
+    width: 20%;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #6481808a;
+    border-radius: 5px;
+}
+
+.idiomas select {
+    margin-top: 1rem;
+}
+
+.formacion input[type="radio"] {
+    accent-color: #648180; 
+}
